@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Kamu yang Spesial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="musik.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Amplop -->
+  <div id="envelope" class="envelope" onclick="openEnvelope()">
+    <p>Klik ini ya... ada sesuatu buat kamu 🎁</p>
+    <div class="flap" id="flap"></div>
+  </div>
+
+  <!-- Greeting Card / Buku -->
+  <div id="cardBook" class="card-book">
+    <div class="page">
+      <h2>🎂 Selamat Ulang Tahun!</h2>
+      <p>happy 18 yaww💖</p>
+      <button onclick="nextPage(1)">Lanjut ➡️</button>
+    </div>
+    <div class="page">
+      <h2>🌟 Harapan & Doa</h2>
+      <p>udah 18 ya, whwh semoga sehat selalu ya, bahagiaa teruss, selalu dalam lindungan-Nya, dan semoga semua impian kamu tercapai yaa. oh iyaa semangat ya kuliahnya 🌷💗</p>
+      <button onclick="nextPage(2)">Lanjut ➡️</button>
+    </div>
+    <div class="page">
+      <h2>💌 Cerita & Rasa</h2>
+      <p>Dari dulu aku cuma bisa nyimpen perasaan... Tapi sekarang aku berani bilang: aku masih suka kamu 🥺</p>
+      <p>mungkin mendadak banget dari ucapan ulang tahun di akhirnya ada confess aku whahahw 💞</p>
+      <p>tapi aku bener bener masih ada rasa sama kamu, mungkin apa kali ini aku bisa hwhw? i still have feel to you, so would u be my gf? 💖</p>
+      <button onclick="nextPage(3)">Lanjut ➡️</button>
+    </div>
+    <div class="page" id="finalPage">
+      <h2>🫣 Jadi... gimana jawabannya?</h2>
+      <p>Jawab jujur ya, aku siap kok dengernya 🫶🏻</p>
+      <div style="display: flex; gap: 20px; margin-top: 20px;">
+        <button onclick="jawaban(true)">Iya</button>
+        <button onclick="jawaban(false)">Engga</button>
+      </div>
+      <p id="responNol" style="margin-top: 20px; font-weight: bold; color: #ff8ea3;"></p>
+    </div>
+  </div>
+
+  <div class="sparkle" id="sparkle"></div>
+  <script src="script.js"></script>
+</body>
+</html>
